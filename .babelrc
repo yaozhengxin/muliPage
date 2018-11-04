@@ -1,0 +1,38 @@
+{
+  "presets": [
+    [
+      "babel-preset-env",
+      {
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "last 5 version",
+            "Android >= 4.0"
+          ]
+        },
+        "useBuiltIns": true,
+        "debug": true
+      }
+    ],
+    [
+      "stage-3"
+    ]
+  ],
+  "plugins": [
+    [
+      "transform-es3-property-literals"
+    ],
+    [
+      "transform-runtime",
+      {
+        "helpers": true,
+        "polyfill": true,
+        "regenerator": true,
+        "moduleName": "babel-runtime"
+      }
+    ],
+    [
+      "syntax-dynamic-import"
+    ]
+  ]
+}
